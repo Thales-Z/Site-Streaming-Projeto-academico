@@ -1,80 +1,67 @@
-*   {
+* {
     margin: 0;
     padding: 0;
 }
 
-body    {
+body {
     background-color: black;
     font-family: 'roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     padding-top: 5%;    
-
 }
+
 nav {
     background-color: #000000; 
     height: 12vh; 
     width: 100%;
     display: flex; 
     align-items: center; 
-    position:fixed; 
+    position: fixed; 
     justify-content: space-around;
     top: 0;
     z-index: 100;
-    
 }
 
-a   {
+a {
     color: white;
     text-decoration: none;
     transition: .3s;
 }
+
 a:hover {
     opacity: 0.7;
 }
 
-.logo   {
+.logo {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-align:justify;
+    text-align: justify;
     margin-right: 400px;
-
-
 }
-.lista-navegacao  {
+
+.lista-navegacao {
     list-style: none;
     display: flex;
-
-    
-
 }
-.lista-navegacao  li  {
+
+.lista-navegacao li {
     letter-spacing: 3px;
     margin-left: 32px;
     text-align: right;
     float: left;
-
-
 }
-
-
-
-
-
 
 .slideshow-container {
     width: 80%;
     max-width: 90vw;
     height: 600px;
-    position:relative; 
+    position: relative; 
     overflow: hidden; 
     border-radius: 80px;
     margin-left: 10%;
     margin-top: 1%;
-    
-   
 }
-
 
 .slideshow-container img {
     -webkit-mask-image: linear-gradient(to top, transparent 5%, black 80%);
@@ -93,15 +80,11 @@ a:hover {
 
 #slide-ruptura {
     object-position: center 5%;
-    
 }
 
-/* * Classe que o JavaScript adicionará para tornar a imagem ativa (visível).
-*/
-.slideshow-container img.slide-active{
+.slideshow-container img.slide-active {
     opacity: 1; 
 }
-
 
 .slide-btn {
     position: absolute;
@@ -122,7 +105,6 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 #prev-btn {
     left: 10px;
     border-radius: 5px 0 0 5px;
@@ -133,30 +115,27 @@ a:hover {
     border-radius: 0 5px 5px 0;
 }
 
-.titulo{
+.titulo {
     text-transform: uppercase;
     text-align: left;
-    position:absolute;
+    position: absolute;
     margin-right: 0%;
     font-size: 100px;
     text-shadow: 10px 4px 20px black;
     overflow: visible;
     z-index: 2;
     top: 65%;
-    left:3%;
+    left: 3%;
     margin-top: 1%;
-    
-    
 }
 
-.destaque{
-    
+.destaque {
     align-items: center;
     text-transform: uppercase;
-    width:max-content;
+    width: max-content;
     z-index: 2;
     left: 3.5%;
-    top:85%;
+    top: 85%;
     position: absolute;
     margin-top: 1%;
 }
@@ -190,23 +169,21 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-
 .filtro-btn.active,
 .filtro-btn:hover {
     background-color: #e50914; 
     color: white;
 }
+
 .galeria-grid {
     width: 300px;
     height: 450px;
     border-radius: 15px;
     display: flex;
     margin-left: 20px;
-    object-fit:cover
- 
-
+    object-fit: cover;
 }
-/* Galeria principal*/
+
 .galeria-principal {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
@@ -219,7 +196,6 @@ a:hover {
     height: 420px; 
     border-radius: 15px;
     overflow: hidden; 
-    
     display: block; 
 }
 
@@ -233,15 +209,14 @@ a:hover {
     transition: opacity 0.7s ease-in-out;
 }
 
-/* Efeito de zoom ao passar o mouse */
 .item-galeria:hover {
     transform: scale(1.05); 
 }
 
-/* Classe para esconder itens filtrados */
 .item-galeria.hide {
     display: none; 
 }
+
 .titulo-galeria {
     font-size: 30px;
     padding: 20px;
@@ -266,6 +241,7 @@ a:hover {
     height: 100%;
     z-index: -1; 
 }
+
 .banner {
     width: 100%;
     height: 100%;
@@ -273,24 +249,27 @@ a:hover {
     -webkit-mask-image: linear-gradient(to top, transparent 5%, black 40%);
     mask-image: linear-gradient(to top, transparent 5%, black 40%);
 }
-.sinopse{
+
+.sinopse {
     text-transform: uppercase;
     text-align: justify;
     z-index: 2;
     left: 3%;
-    top:70%;
+    top: 70%;
     position: absolute;
     width: 400px;
     text-shadow: 10px 4px 20px black;
     overflow: visible;
 }
-.tabela{
+
+.tabela {
     border: white;
     border-collapse: collapse;
     width: 80%;
     text-align: center;
     margin-left: 10%;
 }
+
 .video {
     width: 80%;
     height: 500px;
@@ -299,7 +278,23 @@ a:hover {
     margin-left: 10%;
 }
 
-footer{
+footer {
     text-align: center;
-    padding: 30px
+    padding: 30px;
+}
+
+/* Ajustes estruturais */
+.filtro-input {
+    color: white;
+}
+
+.footer-personalizado {
+    background-color: #000000; 
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+.titulo-destaque-pagina2 {
+    top: 30%; 
+    font-size: 80px;
 }
